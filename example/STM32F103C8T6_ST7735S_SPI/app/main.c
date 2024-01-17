@@ -146,6 +146,7 @@ void drawTest(){
 }
 
 int main(void){
+	uint8_t i = 0;
 	HAL_Init();
 	HAL_Delay(200);
 	
@@ -187,9 +188,15 @@ int main(void){
 	
 	while (1){
 		
-		ledTwinkle(2,100);//led闪烁两次
+		//ledTwinkle(2,100);//led闪烁两次
 		
-		drawTest();
+		printf("Hello_World_%d\n",i++);
+		HAL_Delay(1000);
+		
+		if(i>200){
+			i = 0;
+		}
+		//drawTest();
 		//fpsTest();
 		//imageTest();
 		//asciiTest();
