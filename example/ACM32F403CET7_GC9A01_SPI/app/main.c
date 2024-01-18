@@ -3,25 +3,17 @@
 #include "api.h"
 
 /**
-本工程是 GC9A01 的驱动的演示, 代码中有本屏图片以及字库等内容
+本工程是ACM32F403 GC9A01 的驱动的演示, 代码中有本屏图片以及字库等内容
 
 为了方便对汉字以及图片取模,我写了一个网页的端工具,若有需要可以访问
 	https://www.buziot.com/tools
 
-若有发现bug,或有什么意见与建议,
-请联系 goushicai@qq.com ,
+若有发现bug,或有什么意见与建议,请发送邮件:
+	goushicai@qq.com 
 
-本项目已发布到 github.com/goushicai/open-driver
-若反馈的意见较多,本项目不定期会有有更新,请访问 
-
+或者提交issue : 
+	https://github.com/goushicai/tiny-driver 
 */
-/*********************************************************************************
-* Function    : main
-* Description : The application entry point.
-* Input       : None
-* Output      : None
-**********************************************************************************/
-
 extern volatile uint32_t gu32_SystemCount;
 
 //获取系统tick

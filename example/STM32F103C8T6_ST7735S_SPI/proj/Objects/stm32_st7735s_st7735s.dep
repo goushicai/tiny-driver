@@ -287,8 +287,8 @@ I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x5D10A065)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x5D10A072)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h)(0x5D10A07A)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x5D10A082)
-F (..\msp\gpio.c)(0x65A0F541)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\sys\CMSIS\Core\Include -I ..\sys\CMSIS\Device\ST\STM32F1xx\Include -I ..\sys\STM32F1xx_HAL_Driver\Inc -I ..\msp -I ..\bsp -I ..\drv -I ..\lib -I ..\api -I ..\res -I ..\ui -I ..\app -I ..\config-I.\RTE\_st7735s-IC:\Users\gsc\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
-I (..\msp\gpio.h)(0x65A0F558)
+F (..\msp\gpio.c)(0x65A8A5E4)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\sys\CMSIS\Core\Include -I ..\sys\CMSIS\Device\ST\STM32F1xx\Include -I ..\sys\STM32F1xx_HAL_Driver\Inc -I ..\msp -I ..\bsp -I ..\drv -I ..\lib -I ..\api -I ..\res -I ..\ui -I ..\app -I ..\config-I.\RTE\_st7735s-IC:\Users\gsc\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (..\msp\gpio.h)(0x65A8A5ED)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x5D10A068)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_conf.h)(0x658E8E5D)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x5D10A074)
@@ -314,7 +314,7 @@ I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x5D10A065)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x5D10A072)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h)(0x5D10A07A)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x5D10A082)
-I (..\config\gpio_config.h)(0x65A0C540)
+I (..\config\gpio_config.h)(0x65A8A600)
 F (..\msp\rcc.c)(0x658EF9B7)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\sys\CMSIS\Core\Include -I ..\sys\CMSIS\Device\ST\STM32F1xx\Include -I ..\sys\STM32F1xx_HAL_Driver\Inc -I ..\msp -I ..\bsp -I ..\drv -I ..\lib -I ..\api -I ..\res -I ..\ui -I ..\app -I ..\config-I.\RTE\_st7735s-IC:\Users\gsc\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\objects\rcc.o --omf_browse .\objects\rcc.crf --depend .\objects\rcc.d)
 I (..\msp\rcc.h)(0x658D2320)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x5D10A068)
@@ -342,7 +342,7 @@ I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x5D10A065)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x5D10A072)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h)(0x5D10A07A)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x5D10A082)
-F (..\msp\spi.c)(0x6593B304)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\sys\CMSIS\Core\Include -I ..\sys\CMSIS\Device\ST\STM32F1xx\Include -I ..\sys\STM32F1xx_HAL_Driver\Inc -I ..\msp -I ..\bsp -I ..\drv -I ..\lib -I ..\api -I ..\res -I ..\ui -I ..\app -I ..\config-I.\RTE\_st7735s-IC:\Users\gsc\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
+F (..\msp\spi.c)(0x65A8A5D4)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\sys\CMSIS\Core\Include -I ..\sys\CMSIS\Device\ST\STM32F1xx\Include -I ..\sys\STM32F1xx_HAL_Driver\Inc -I ..\msp -I ..\bsp -I ..\drv -I ..\lib -I ..\api -I ..\res -I ..\ui -I ..\app -I ..\config-I.\RTE\_st7735s-IC:\Users\gsc\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
 I (..\msp\spi.h)(0x659A564A)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x5D10A068)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_conf.h)(0x658E8E5D)
@@ -453,12 +453,12 @@ I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x5D10A065)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x5D10A072)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h)(0x5D10A07A)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x5D10A082)
-I (..\msp\gpio.h)(0x65A0F558)
-I (..\config\gpio_config.h)(0x65A0C540)
+I (..\msp\gpio.h)(0x65A8A5ED)
+I (..\config\gpio_config.h)(0x65A8A600)
 F (..\bsp\bsp.h)(0x658E6F0E)()
-F (..\drv\st7735s.c)(0x65A0F660)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\sys\CMSIS\Core\Include -I ..\sys\CMSIS\Device\ST\STM32F1xx\Include -I ..\sys\STM32F1xx_HAL_Driver\Inc -I ..\msp -I ..\bsp -I ..\drv -I ..\lib -I ..\api -I ..\res -I ..\ui -I ..\app -I ..\config-I.\RTE\_st7735s-IC:\Users\gsc\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\objects\st7735s.o --omf_browse .\objects\st7735s.crf --depend .\objects\st7735s.d)
+F (..\drv\st7735s.c)(0x65A8A79A)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\sys\CMSIS\Core\Include -I ..\sys\CMSIS\Device\ST\STM32F1xx\Include -I ..\sys\STM32F1xx_HAL_Driver\Inc -I ..\msp -I ..\bsp -I ..\drv -I ..\lib -I ..\api -I ..\res -I ..\ui -I ..\app -I ..\config-I.\RTE\_st7735s-IC:\Users\gsc\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\objects\st7735s.o --omf_browse .\objects\st7735s.crf --depend .\objects\st7735s.d)
 I (..\drv\st7735s.h)(0x65A0F505)
-I (..\config\st7735s_config.h)(0x65A0F5D3)
+I (..\config\st7735s_config.h)(0x65A8A623)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x5D10A068)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_conf.h)(0x658E8E5D)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x5D10A074)
@@ -484,13 +484,13 @@ I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x5D10A065)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x5D10A072)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h)(0x5D10A07A)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x5D10A082)
-I (..\config\gpio_config.h)(0x65A0C540)
+I (..\config\gpio_config.h)(0x65A8A600)
 I (..\msp\spi.h)(0x659A564A)
-F (..\api\display.c)(0x65A0DC37)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\sys\CMSIS\Core\Include -I ..\sys\CMSIS\Device\ST\STM32F1xx\Include -I ..\sys\STM32F1xx_HAL_Driver\Inc -I ..\msp -I ..\bsp -I ..\drv -I ..\lib -I ..\api -I ..\res -I ..\ui -I ..\app -I ..\config-I.\RTE\_st7735s-IC:\Users\gsc\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\objects\display.o --omf_browse .\objects\display.crf --depend .\objects\display.d)
+F (..\api\display.c)(0x65A8A7E3)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\sys\CMSIS\Core\Include -I ..\sys\CMSIS\Device\ST\STM32F1xx\Include -I ..\sys\STM32F1xx_HAL_Driver\Inc -I ..\msp -I ..\bsp -I ..\drv -I ..\lib -I ..\api -I ..\res -I ..\ui -I ..\app -I ..\config-I.\RTE\_st7735s-IC:\Users\gsc\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\objects\display.o --omf_browse .\objects\display.crf --depend .\objects\display.d)
 I (..\api\display.h)(0x65A0E09F)
-I (..\config\display_config.h)(0x65A0F812)
+I (..\config\display_config.h)(0x65A8A647)
 I (..\drv\st7735s.h)(0x65A0F505)
-I (..\config\st7735s_config.h)(0x65A0F5D3)
+I (..\config\st7735s_config.h)(0x65A8A623)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x5D10A068)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_conf.h)(0x658E8E5D)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x5D10A074)
@@ -516,16 +516,16 @@ I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x5D10A065)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x5D10A072)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h)(0x5D10A07A)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x5D10A082)
-I (..\config\gpio_config.h)(0x65A0C540)
+I (..\config\gpio_config.h)(0x65A8A600)
 I (..\msp\spi.h)(0x659A564A)
 I (..\res\color.h)(0x658E6305)
 I (..\res\font.h)(0x659AA68F)
-I (..\res\pic.h)(0x659A9CC2)
+I (..\res\pic.h)(0x659CC07A)
 F (..\api\api.h)(0x658E68FD)()
 F (..\res\color.h)(0x658E6305)()
 F (..\res\font.h)(0x659AA68F)()
-F (..\res\pic.h)(0x659A9CC2)()
-F (..\app\main.c)(0x65A602B5)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\sys\CMSIS\Core\Include -I ..\sys\CMSIS\Device\ST\STM32F1xx\Include -I ..\sys\STM32F1xx_HAL_Driver\Inc -I ..\msp -I ..\bsp -I ..\drv -I ..\lib -I ..\api -I ..\res -I ..\ui -I ..\app -I ..\config-I.\RTE\_st7735s-IC:\Users\gsc\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\res\pic.h)(0x659CC07A)()
+F (..\app\main.c)(0x65A8A7AA)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\sys\CMSIS\Core\Include -I ..\sys\CMSIS\Device\ST\STM32F1xx\Include -I ..\sys\STM32F1xx_HAL_Driver\Inc -I ..\msp -I ..\bsp -I ..\drv -I ..\lib -I ..\api -I ..\res -I ..\ui -I ..\app -I ..\config-I.\RTE\_st7735s-IC:\Users\gsc\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="529" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\msp\msp.h)(0x6590F825)
 I (..\msp\rcc.h)(0x658D2320)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x5D10A068)
@@ -553,7 +553,8 @@ I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x5D10A065)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x5D10A072)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h)(0x5D10A07A)
 I (..\sys\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x5D10A082)
-I (..\msp\gpio.h)(0x65A0F558)
+I (..\msp\gpio.h)(0x65A8A5ED)
+I (..\config\gpio_config.h)(0x65A8A600)
 I (..\msp\uart.h)(0x65A4E2AA)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (..\msp\spi.h)(0x659A564A)
@@ -561,13 +562,12 @@ I (..\bsp\bsp.h)(0x658E6F0E)
 I (..\bsp\led.h)(0x658E6E3D)
 I (..\api\api.h)(0x658E68FD)
 I (..\api\display.h)(0x65A0E09F)
-I (..\config\display_config.h)(0x65A0F812)
+I (..\config\display_config.h)(0x65A8A647)
 I (..\drv\st7735s.h)(0x65A0F505)
-I (..\config\st7735s_config.h)(0x65A0F5D3)
-I (..\config\gpio_config.h)(0x65A0C540)
+I (..\config\st7735s_config.h)(0x65A8A623)
 I (..\res\color.h)(0x658E6305)
 I (..\res\font.h)(0x659AA68F)
-I (..\res\pic.h)(0x659A9CC2)
-F (..\config\display_config.h)(0x65A0F812)()
-F (..\config\gpio_config.h)(0x65A0C540)()
-F (..\config\st7735s_config.h)(0x65A0F5D3)()
+I (..\res\pic.h)(0x659CC07A)
+F (..\config\display_config.h)(0x65A8A647)()
+F (..\config\gpio_config.h)(0x65A8A600)()
+F (..\config\st7735s_config.h)(0x65A8A623)()

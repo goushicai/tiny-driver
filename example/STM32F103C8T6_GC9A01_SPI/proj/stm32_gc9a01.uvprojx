@@ -579,36 +579,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>ui</GroupName>
-          <Files>
-            <File>
-              <FileName>ui_button.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\ui\ui_button.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_checkbox.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\ui\ui_checkbox.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_input.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\ui\ui_input.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_seg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\ui\ui_seg.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_text.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\ui\ui_text.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>api</GroupName>
           <Files>
             <File>

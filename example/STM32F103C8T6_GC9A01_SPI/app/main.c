@@ -3,20 +3,21 @@
 #include "api.h"
 
 /**
-
-本工程是st7735s的驱动的演示, 代码中有本屏图片以及字库等内容,静态数据有50多k,
-加上代码可能超出64k,对STM32F103C8T6及以下的MCU,建议注释一部分代码再编译运行
+本工程是STM32F103 GC9A01 的驱动的演示, 代码中有本屏图片以及字库等内容
 
 为了方便对汉字以及图片取模,我写了一个网页的端工具,若有需要可以访问
 	https://www.buziot.com/tools
 
-若有发现bug,或有什么意见与建议,
-请联系 goushicai@qq.com ,
+若有发现bug,或有什么意见与建议,请发送邮件:
+	goushicai@qq.com 
 
-本项目已发布到 github.com/goushicai/open-driver,喜欢star,fork
-若反馈的意见较多,本项目不定期会有有更新,请访问 
+或者提交issue : 
+	https://github.com/goushicai/tiny-driver 
+	
+代码中有DMA的刷新演示, 在 spi.h 中修改 LCD_SPI_ENABLE_DMA 打开或关闭
 
 */
+
 
 void HAL_MspInit(void){
   __HAL_RCC_AFIO_CLK_ENABLE();

@@ -1,0 +1,22 @@
+--cpu=Cortex-M33
+".\objects\system_acm32f4.o"
+".\objects\startup_acm32f4.o"
+".\objects\hal_eflash.o"
+".\objects\hal_exti.o"
+".\objects\hal_gpio.o"
+".\objects\hal_spi.o"
+".\objects\hal_uart.o"
+".\objects\hal_uart_ex.o"
+"..\sys\HAL_Driver\Src\HAL_EFlash_EX.lib"
+".\objects\hal_dma.o"
+".\objects\gpio.o"
+".\objects\spi.o"
+".\objects\uart.o"
+".\objects\led.o"
+".\objects\st7735s.o"
+".\objects\display.o"
+".\objects\main.o"
+--library_type=microlib --strict --scatter ".\Objects\acm32f403_7735s.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\acm32f403_7735s.map" -o .\Objects\acm32f403_7735s.axf

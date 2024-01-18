@@ -6,4 +6,6 @@
 
 3. 初始化时钟,GPIO,SPI等
 
-4. 在应用层调用display
+4. 在应用层调用display中的功能
+
+更细节的功能参考example中的示例代码, 可以在项目中搜索 [TO_MODITY] ,注释会有详细的解释

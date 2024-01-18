@@ -3,21 +3,19 @@
 #include "api.h"
 
 /**
-
-本工程是st7735s的驱动的演示, 代码中有本屏图片以及字库等内容,静态数据有50多k,
-加上代码可能超出64k,对STM32F103C8T6及以下的MCU,建议注释一部分代码再编译运行
+本工程是STM32F103C8T6 ST7735S 的驱动的演示, 代码中有本屏图片以及字库等内容
 
 为了方便对汉字以及图片取模,我写了一个网页的端工具,若有需要可以访问
 	https://www.buziot.com/tools
 
-若有发现bug,或有什么意见与建议,
-请联系 goushicai@qq.com ,
+若有发现bug,或有什么意见与建议,请发送邮件:
+	goushicai@qq.com 
 
-本项目已发布到 github.com/goushicai/open-driver,喜欢star,fork
-若反馈的意见较多,本项目不定期会有有更新,请访问 
-
+或者提交issue : 
+	https://github.com/goushicai/tiny-driver 
+	
+本示例中含有DMA功能,可在 spi.h 中修改LCD_SPI_ENABLE_DMA以打开或关闭
 */
-
 void HAL_MspInit(void){
   __HAL_RCC_AFIO_CLK_ENABLE();
   __HAL_RCC_PWR_CLK_ENABLE();
@@ -43,11 +41,8 @@ void fpsTest(){
 		lcdClear(uiColor[i%8]);
 	}
 	tick = HAL_GetTick() - tick;//时间差, fps = 1000/tick * 1000; 
-	//printf("NO DMA, DRam:%d, Repeat:%d,Time: %dms, Fps: %0.2f\n",DISPLAY_RAM_SIZE*2,repeatCount, tick, ((double)(repeatCount*1000))/tick); 
-	
-	printf("NO DMA count:%d,times: %d ms\n", repeatCount,tick); 
-
-	
+	printf("NO DMA, DRam:%d, Repeat:%d,Time: %dms, Fps: %0.2f\n",DISPLAY_RAM_SIZE*2,repeatCount, tick, ((double)(repeatCount*1000))/tick); 
+		
 	HAL_Delay(1000);
 	
 #if(LCD_SPI_ENABLE_DMA == 1)

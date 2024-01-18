@@ -1,5 +1,10 @@
 #include "gpio.h"
-#include "gpio_config.h"
+
+/**
+[TO_MODITY]
+
+请根据实际的需要初始化LCD相关的GPIO
+*/
 
 void lcdGpioInit(){
 	GPIO_InitTypeDef GPIO_InitStruct = {0};

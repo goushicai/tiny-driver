@@ -479,7 +479,7 @@ LcdStatusTypeDef lcdLine(int16_t x0,int16_t y0,int16_t x1,int16_t y1,uint16_t co
 /**
 单色位图,如文本,单色图标等数据
 位图数据,一个字节对应8个像素,每个字节的高位到低位 byte[7:0]对应第0-7个像素
-位图取模功能,参考 https://buziot.com/tools/lcd-font
+位图取模功能请访问 https://www.buziot.com/tools
 */
 LcdStatusTypeDef lcdMonocolour(int16_t x,int16_t y, int16_t w,int16_t h,uint16_t color,uint16_t bgColor, char *data){
 	

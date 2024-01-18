@@ -14,7 +14,15 @@ void SPI_Init(void){
     HAL_SPI_Init(&lcdSpiHandle);
 }
 
+/**
+[TO_MODITY]
 
+	不同的开发库,对于SPI的GPIO初始化可能有所不同,
+	如STM32等提供的HAL库有一个 weak 修饰的 HAL_SPI_MspInit 函数,
+	在 SPI_Init() 函数中调用,用户可以编码同名函数覆盖此
+
+请根据实际的情况初始化SPI的GPIO
+*/
 void HAL_SPI_MspInit(SPI_HandleTypeDef* spiHandle){
 	GPIO_InitTypeDef GPIO_InitStruct = {0};
 

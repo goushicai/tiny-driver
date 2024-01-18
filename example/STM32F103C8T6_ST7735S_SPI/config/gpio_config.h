@@ -1,6 +1,14 @@
 #ifndef __GPIO_CONFIG_H__
 #define __GPIO_CONFIG_H__
 
+/***
+[TO_MODITY]
+
+本配置文件是MCU 与LCD 屏相关的 GPIO 宏定义,
+	在gpio_config.h中有 对相关GPIO管脚操作的宏定义函数
+	GPIO初始化时也有用到
+*/
+
 //lcd背光,部分屏不需要BLK
 #define LCD_BLK_PORT 	GPIOA
 #define LCD_BLK_PIN  	GPIO_PIN_2
