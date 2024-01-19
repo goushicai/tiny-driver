@@ -2,19 +2,26 @@
 
 #define __DISPLAY_CONFIG_H
 
-#include "gc9a01.h" //载入需要的驱动文件
-#include "color.h" //载入颜色,字体,图片等资源
+#include "st7735s.h"
+#include "color.h"
 #include "font.h"
 #include "pic.h"
 
 /***
-	若只希望数据在屏的一部分,可以通过屏宽,屏高,以及水平垂直偏移4个参数,
-	并在 display.c中对相应的函数进行修改
+[TO_MODITY]
+
+在驱动中已有LCD_WIDTH,LCD_HEIGHT等参数,为什么在显示接口中又有类似的参数
+
+原因驱动层的LCD的宽高是物理宽高,而显示接口层SCREEN的宽高是逻辑概念,
+若有必要可以通过复制一份display,并做相应修改,实现对同一个LCD屏的分屏显示功能
+或者把 SCREEN 相关的参数做成结构体,对同一LCD屏实现多个SCREEN实例
+对于小型的LCD屏这个意义并不大,暂不实现
 */
+
 //屏宽度
-#define SCREEN_WIDTH	240
+#define SCREEN_WIDTH	LCD_WIDTH
 //屏高度
-#define SCREEN_HEIGHT	240
+#define SCREEN_HEIGHT	LCD_HEIGHT
 //水平偏移
 #define SCREEN_OFFSET_X	0
 //垂直偏移

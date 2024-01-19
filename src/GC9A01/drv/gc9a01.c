@@ -729,3 +729,78 @@ LcdStatusTypeDef lcdBlock(int16_t x,int16_t y, int16_t w,int16_t h,uint16_t colo
     }
 	return LCD_STATUS_OK;
 }
+
+/**
+DMA若不能一次性发完,需要将发送的批次数,以及剩余字节数作为全局变量,并检查DMA发送状态dmaSpiTxState,
+在DMA中断回调函数中继续发送这样的方式对使代码结构复杂化,在刷新率可接受的情况下,不建议使用DMA
+
+注意DMA在发送数据之前要判断并等待 dmaSpiTxState==0 ,否则会出现异常
+////////////////////////////////
+*/
+
+#if(LCD_SPI_ENABLE_DMA == 1)
+uint16_t dmaTxCount=0,dmaTxRemain=0; //缓存小于发送数据量，分批发送的次数,剩余的字节数
+volatile uint8_t  dmaSpiTxState=0; //DMA发送状态,0 空闲,1分批发送中
+
+void dmaSpiTx(){
+	
+	if(dmaSpiTxState==1){
+		
+		if(dmaTxCount == 0){
+			if(dmaTxRemain>0){
+				spiTxlcdDMA(_DisplayRAM, dmaTxRemain*2);
+				dmaTxRemain = 0;
+			}else{
+				dmaSpiTxState = 0; //本次发送完成
+			}
+		}else if(dmaTxCount > 0){
+			dmaTxCount --;
+			spiTxlcdDMA(_DisplayRAM, DISPLAY_RAM_SIZE*2);
+		}
+	}
+}
+
+LcdStatusTypeDef lcdBlockDMA(int16_t x,int16_t y, int16_t w,int16_t h,uint16_t color){
+	uint16_t i=0;
+	LcdStatusTypeDef status;
+	
+	if(w<=0 || h<=0){
+		return LCD_STATUS_ERROR;
+	}
+	
+	status = lcdCheckParam( x, y, w, h);
+	if(status != LCD_STATUS_OK){
+		return status;
+	}
+	
+	for(i = 0;i < DISPLAY_RAM_SIZE;i++){
+		_DisplayRAM[2*i] = color>>8;
+		_DisplayRAM[2*i+1] = color;
+	}
+	
+	w = (w+x)>_LcdWidth? _LcdWidth-x: w; //强制操作区域在屏幕范围
+	h = (h+y)>_LcdHeight? _LcdHeight-y: h;
+	
+	dmaTxCount=(w * h)/ DISPLAY_RAM_SIZE;
+	dmaTxRemain = (w * h)% DISPLAY_RAM_SIZE;
+	
+	dmaSpiTxState = 1; //设置标志,在分批传输完成后清除
+	lcdArea(x,y,w,h);
+	lcdCmd(LCD_CMD_MEMORY_WRITE);
+	LCD_DATA_ENABLE();
+	
+	dmaSpiTx();
+	
+	return LCD_STATUS_OK;
+}
+
+LcdStatusTypeDef lcdClearDMA(uint16_t color){
+	return lcdBlockDMA(0,0,_LcdWidth,_LcdHeight,color);
+}
+
+void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi){
+	dmaSpiTx();
+}
+#endif
+
+

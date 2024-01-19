@@ -249,6 +249,12 @@ void fillCircle(int16_t x,int16_t y ,uint16_t r, uint16_t color){
 		}
 	}
 }
+
+/**
+单色位图,如ascii字符,汉字,单色图标等数据
+位图数据,一个字节对应8个像素,每个字节的高位到低位 byte[7:0]对应第0-7个像素
+位图取模工具请访问 https://www.buziot.com/tools
+*/
 //画ascii字符
 void drawAscii(char ch, FontSize fontSize, int16_t x,int16_t y, uint16_t color,uint16_t bgColor){
 	uint16_t idx = 0;
@@ -303,8 +309,10 @@ void drawChinese(uint16_t gbkCode, FontSize fontSize, int16_t x,int16_t y, uint1
 	}
 }
 
-
-//画图片
+/**
+画图片,暂只支持16位色
+图片取模工具请访问 https://www.buziot.com/tools
+*/
 void drawImage(int16_t x,int16_t y,int16_t w,int16_t h,uint8_t *imgData){
 	/*
 		x = x > SCREEN_WIDTH ? SCREEN_WIDTH: x;

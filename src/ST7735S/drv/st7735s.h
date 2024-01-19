@@ -210,5 +210,12 @@ LcdStatusTypeDef lcdBlock(int16_t x,int16_t y, int16_t w,int16_t h,uint16_t colo
 
 //µ¥É«Î»Í¼
 LcdStatusTypeDef lcdMonocolour(int16_t x,int16_t y, int16_t w,int16_t h,uint16_t color,uint16_t bgColor, char *data);
-  		 
+
+
+#if(LCD_SPI_ENABLE_DMA == 1)
+LcdStatusTypeDef lcdClearDMA(uint16_t color);
+LcdStatusTypeDef lcdBlockDMA(int16_t x,int16_t y, int16_t w,int16_t h,uint16_t color);
+#endif
+
+/**/	  		 
 #endif
